@@ -3,14 +3,9 @@ import NavBar from "./NavBar";
 import Home from "./Home";
 import About from "./About";
 
-const user = {
-  name: "Liza",
-  city: "New York",
-  bio: "I made this!",
-  color: "firebrick",
-  github: "https://github.com/liza",
-  linkedin: "https://www.linkedin.com/in/liza/"
-};
+import user from "../data/user";
+console.log(user);
+
 
 function App() {
   return (
@@ -23,8 +18,8 @@ function App() {
       />
       <About 
         bio={user.bio}
-        github={user.github}
-        linkedin={user.linkedin}
+        github={user.links.github}
+        linkedin={user.links.linkedin}
       />
     </div>
   );
